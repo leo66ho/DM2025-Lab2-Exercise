@@ -1,0 +1,241 @@
+<style>
+.lx-highlight { position: relative; border-radius:3px; padding:1px 2px;}
+.lx-highlight .lx-tooltip {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  background: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 4px;
+  padding: 6px 8px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  max-width: 240px;
+  white-space: normal;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.lx-highlight:hover .lx-tooltip { visibility: visible; opacity:1; }
+.lx-animated-wrapper { max-width: 100%; font-family: Arial, sans-serif; }
+.lx-controls {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 8px;
+  padding: 12px; margin-bottom: 16px;
+}
+.lx-button-row {
+  display: flex; justify-content: center; gap: 8px; margin-bottom: 12px;
+}
+.lx-control-btn {
+  background: #4285f4; color: white; border: none; border-radius: 4px;
+  padding: 8px 16px; cursor: pointer; font-size: 13px; font-weight: 500;
+  transition: background-color 0.2s;
+}
+.lx-control-btn:hover { background: #3367d6; }
+.lx-progress-container {
+  margin-bottom: 8px;
+}
+.lx-progress-slider {
+  width: 100%; margin: 0; appearance: none; height: 6px;
+  background: #ddd; border-radius: 3px; outline: none;
+}
+.lx-progress-slider::-webkit-slider-thumb {
+  appearance: none; width: 18px; height: 18px; background: #4285f4;
+  border-radius: 50%; cursor: pointer;
+}
+.lx-progress-slider::-moz-range-thumb {
+  width: 18px; height: 18px; background: #4285f4; border-radius: 50%;
+  cursor: pointer; border: none;
+}
+.lx-status-text {
+  text-align: center; font-size: 12px; color: #666; margin-top: 4px;
+}
+.lx-text-window {
+  font-family: monospace; white-space: pre-wrap; border: 1px solid #90caf9;
+  padding: 12px; max-height: 260px; overflow-y: auto; margin-bottom: 12px;
+  line-height: 1.6;
+}
+.lx-attributes-panel {
+  background: #fafafa; border: 1px solid #90caf9; border-radius: 6px;
+  padding: 8px 10px; margin-top: 8px; font-size: 13px;
+}
+.lx-current-highlight {
+  border-bottom: 4px solid #ff4444;
+  font-weight: bold;
+  animation: lx-pulse 1s ease-in-out;
+}
+@keyframes lx-pulse {
+  0% { text-decoration-color: #ff4444; }
+  50% { text-decoration-color: #ff0000; }
+  100% { text-decoration-color: #ff4444; }
+}
+.lx-legend {
+  font-size: 12px; margin-bottom: 8px;
+  padding-bottom: 8px; border-bottom: 1px solid #e0e0e0;
+}
+.lx-label {
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 3px;
+  margin-right: 4px;
+  color: #000;
+}
+.lx-attr-key {
+  font-weight: 600;
+  color: #1565c0;
+  letter-spacing: 0.3px;
+}
+.lx-attr-value {
+  font-weight: 400;
+  opacity: 0.85;
+  letter-spacing: 0.2px;
+}
+
+/* Add optimizations with larger fonts and better readability for GIFs */
+.lx-gif-optimized .lx-text-window { font-size: 16px; line-height: 1.8; }
+.lx-gif-optimized .lx-attributes-panel { font-size: 15px; }
+.lx-gif-optimized .lx-current-highlight { text-decoration-thickness: 4px; }
+</style>
+    <div class="lx-animated-wrapper lx-gif-optimized">
+      <div class="lx-attributes-panel">
+        <div class="lx-legend">Highlights Legend: <span class="lx-label" style="background-color:#D2E3FC;">audience_impact</span> <span class="lx-label" style="background-color:#C8E6C9;">opinion_statement</span></div>
+        <div id="attributesContainer"></div>
+      </div>
+      <div class="lx-text-window" id="textWindow">
+        **Page 1**
+&quot;&quot;&quot;
+Payna, Angelica L.  
+BSTMOUMN 1-C  
+Film Review  
+
+
+General Antonio Luna, amongst the most brilliant former soldiers in History of the 
+philippines, is followed as he continues to force his countrymen against past and present colonial 
+masters, as well as rise above their own fury disputes, to meet the expectations of the Philippine 
+Revolution. 
+This actually took place in 1898, when Spanish colonial power of the Philippines has 
+crumbled. The Filipinos are preparing to become a self-governing nation when American forces 
+arrive, but there is division among the Filipino cabinet. Spain consented to The Treaty with 
+America after defeating the Spanish-American War, which the Filipinos were unaware of. Spain, 
+together with the Philippine archipelago, relinquishes its territories to America in exchange for 
+$20 million. 
+The Philippines&#x27; military leader, General Antonio Luna, believes that the Americans 
+should be expelled and that the Philippines&#x27; revolution to establish an independent republic 
+should continue. On the other side, some Cabinet members believe that making the Philippines 
+an American protectorate will help the country prosper economically. 
+<span class="lx-highlight lx-current-highlight" data-idx="0" style="background-color:#C8E6C9;">The incomparability of President Aguinaldo to patriotic Antonio Luna is demonstrated.</span> 
+Also, without using somebody that is capable of accomplishing something, President Emilio&#x27;s 
+<span class="lx-highlight" data-idx="1" style="background-color:#C8E6C9;">feelings triumphed</span>, and <span class="lx-highlight" data-idx="2" style="background-color:#C8E6C9;">his jealously at being simply outclassed by Luna&#x27;s Plans to save our 
+country will be a risk to his personal accomplishments</span>, <span class="lx-highlight" data-idx="3" style="background-color:#D2E3FC;">similar with what he did to Andres 
+Bonifacio</span>. 
+Within three days, Luna and the Bernal brothers had organized a group of 4,000 troops 
+and declared his notorious &quot;Article One,&quot; which said that &quot;those who fail to obey his commands 
+shall be executed even without privilege of a conviction in a court martial.&quot; <span class="lx-highlight" data-idx="4" style="background-color:#C8E6C9;">Filipinos, according</span>
+&quot;&quot;&quot;
+
+**Page 2**
+&quot;&quot;&quot;
+to Heneral Luna, lack profundity and insight. That&#x27;s why <span class="lx-highlight" data-idx="5" style="background-color:#C8E6C9;">his intentions as a General fell 
+through</span>—<span class="lx-highlight" data-idx="6" style="background-color:#D2E3FC;">no one, not even the President, could comprehend him</span>. 
+Macario Sakay. It underlines that the uprising was more than just banditry; it was a 
+revolutionary. Macario Sakay was a former Katipunan revolutionist. He was <span class="lx-highlight" data-idx="7" style="background-color:#C8E6C9;">truly the 
+Katipunan&#x27;s Dapitan chapter&#x27;s leader</span>. Even though their leader, Emilio Aguinaldo, had already 
+surrendered to the Americans, he <span class="lx-highlight" data-idx="8" style="background-color:#C8E6C9;">battled valiantly</span>. He was then apprehended, but later released. 
+Macario Sakay, on the other hand, was <span class="lx-highlight" data-idx="9" style="background-color:#C8E6C9;">a fighter for liberty</span>. He couldn&#x27;t stomach the prospect of 
+the Philippines falling under foreign rule once more. He believed that if he did nothing, 
+everything they had <span class="lx-highlight" data-idx="10" style="background-color:#C8E6C9;">battled for</span> would have been for naught. 
+
+<span class="lx-highlight" data-idx="11" style="background-color:#C8E6C9;">The Tagalog Republic was acknowledged</span> by the last revolutionary leaders <span class="lx-highlight" data-idx="12" style="background-color:#C8E6C9;">battling for 
+liberation</span> in various parts of Luzon. <span class="lx-highlight" data-idx="13" style="background-color:#C8E6C9;">They all pooled their resources</span> in order to <span class="lx-highlight" data-idx="14" style="background-color:#C8E6C9;">mount a powerful 
+counter-offensive</span> against by the Americans. <span class="lx-highlight" data-idx="15" style="background-color:#C8E6C9;">They were successful for a time</span>, but <span class="lx-highlight" data-idx="16" style="background-color:#C8E6C9;">the Americans 
+became aware of their operations</span>. As part of their counter-offensive, the Americans gathered all 
+of the revolutionists&#x27; supporters in one location. <span class="lx-highlight" data-idx="17" style="background-color:#C8E6C9;">The Tagalog Republic&#x27;s demise is genuinely 
+repentant</span>. <span class="lx-highlight" data-idx="18" style="background-color:#C8E6C9;">It&#x27;s deception or treachery at its finest</span>. The Revolutionaries were sold to the United 
+states government by Mr. Gomez, a Filipino citizen.
+&quot;&quot;&quot;
+
+
+      </div>
+      <div class="lx-controls">
+        <div class="lx-button-row">
+          <button class="lx-control-btn" onclick="playPause()">▶️ Play</button>
+          <button class="lx-control-btn" onclick="prevExtraction()">⏮ Previous</button>
+          <button class="lx-control-btn" onclick="nextExtraction()">⏭ Next</button>
+        </div>
+        <div class="lx-progress-container">
+          <input type="range" id="progressSlider" class="lx-progress-slider"
+                 min="0" max="18" value="0"
+                 onchange="jumpToExtraction(this.value)">
+        </div>
+        <div class="lx-status-text">
+          Entity <span id="entityInfo">1/19</span> |
+          Pos <span id="posInfo">[1191-1276]</span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function() {
+        const extractions = [{"index": 0, "class": "opinion_statement", "text": "The incomparability of President Aguinaldo to patriotic Antonio Luna is demonstrated.", "color": "#C8E6C9", "startPos": 1191, "endPos": 1276, "beforeText": "e. On the other side, some Cabinet members believe that making the Philippines \nan American protectorate will help the country prosper economically. \n", "extractionText": "The incomparability of President Aguinaldo to patriotic Antonio Luna is demonstrated.", "afterText": " \nAlso, without using somebody that is capable of accomplishing something, President Emilio&#x27;s \nfeelings triumphed, and his jealously at being simply o", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">President Aguinaldo and Antonio Luna</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">incomparability</span>}</div>"}, {"index": 1, "class": "opinion_statement", "text": "feelings triumphed", "color": "#C8E6C9", "startPos": 1371, "endPos": 1389, "beforeText": "nt Aguinaldo to patriotic Antonio Luna is demonstrated. \nAlso, without using somebody that is capable of accomplishing something, President Emilio&#x27;s \n", "extractionText": "feelings triumphed", "afterText": ", and his jealously at being simply outclassed by Luna&#x27;s Plans to save our \ncountry will be a risk to his personal accomplishments, similar with what ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">President Emilio&#x27;s feelings</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">triumphed</span>}</div>"}, {"index": 2, "class": "opinion_statement", "text": "his jealously at being simply outclassed by Luna's Plans to save our country will be a risk to his personal accomplishments", "color": "#C8E6C9", "startPos": 1395, "endPos": 1519, "beforeText": "c Antonio Luna is demonstrated. \nAlso, without using somebody that is capable of accomplishing something, President Emilio&#x27;s \nfeelings triumphed, and ", "extractionText": "his jealously at being simply outclassed by Luna&#x27;s Plans to save our \ncountry will be a risk to his personal accomplishments", "afterText": ", similar with what he did to Andres \nBonifacio. \nWithin three days, Luna and the Bernal brothers had organized a group of 4,000 troops \nand declared ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">President Emilio&#x27;s jealousy</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">risk to his personal accomplishments</span>}</div>"}, {"index": 3, "class": "audience_impact", "text": "similar with what he did to Andres Bonifacio", "color": "#D2E3FC", "startPos": 1521, "endPos": 1566, "beforeText": "feelings triumphed, and his jealously at being simply outclassed by Luna&#x27;s Plans to save our \ncountry will be a risk to his personal accomplishments, ", "extractionText": "similar with what he did to Andres \nBonifacio", "afterText": ". \nWithin three days, Luna and the Bernal brothers had organized a group of 4,000 troops \nand declared his notorious &quot;Article One,&quot; which said that &quot;t", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">suspicion, concern</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">President Emilio&#x27;s jealousy and actions</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">the audience</span>}</div>"}, {"index": 4, "class": "opinion_statement", "text": "Filipinos, according to Heneral Luna, lack profundity and insight", "color": "#C8E6C9", "startPos": 1830, "endPos": 1850, "beforeText": "us &quot;Article One,&quot; which said that &quot;those who fail to obey his commands \nshall be executed even without privilege of a conviction in a court martial.&quot; ", "extractionText": "Filipinos, according", "afterText": "\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\nto Heneral Luna, lack profundity and insight. That&#x27;s why his intentions as a General fell \nthrough\u2014no one, not even the President", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Filipinos</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">lack profundity and insight</span>}</div>"}, {"index": 5, "class": "opinion_statement", "text": "his intentions as a General fell through", "color": "#C8E6C9", "startPos": 1928, "endPos": 1969, "beforeText": "hout privilege of a conviction in a court martial.&quot; Filipinos, according\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\nto Heneral Luna, lack profundity and insight. That&#x27;s why ", "extractionText": "his intentions as a General fell \nthrough", "afterText": "\u2014no one, not even the President, could comprehend him. \nMacario Sakay. It underlines that the uprising was more than just banditry; it was a \nrevoluti", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Heneral Luna&#x27;s intentions</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">fell through</span>}</div>"}, {"index": 6, "class": "audience_impact", "text": "no one, not even the President, could comprehend him", "color": "#D2E3FC", "startPos": 1970, "endPos": 2022, "beforeText": "martial.&quot; Filipinos, according\n&quot;&quot;&quot;\n\n**Page 2**\n&quot;&quot;&quot;\nto Heneral Luna, lack profundity and insight. That&#x27;s why his intentions as a General fell \nthrough\u2014", "extractionText": "no one, not even the President, could comprehend him", "afterText": ". \nMacario Sakay. It underlines that the uprising was more than just banditry; it was a \nrevolutionary. Macario Sakay was a former Katipunan revolutio", "attributesHtml": "<div><strong>class:</strong> audience_impact</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">emotion_evoked</span>: <span class=\"lx-attr-value\">confusion, frustration</span>, <span class=\"lx-attr-key\">causal_element</span>: <span class=\"lx-attr-value\">Heneral Luna&#x27;s communication or intentions</span>, <span class=\"lx-attr-key\">target_audience</span>: <span class=\"lx-attr-value\">Filipinos, including the President</span>}</div>"}, {"index": 7, "class": "opinion_statement", "text": "truly the Katipunan's Dapitan chapter's leader", "color": "#C8E6C9", "startPos": 2185, "endPos": 2232, "beforeText": "kay. It underlines that the uprising was more than just banditry; it was a \nrevolutionary. Macario Sakay was a former Katipunan revolutionist. He was ", "extractionText": "truly the \nKatipunan&#x27;s Dapitan chapter&#x27;s leader", "afterText": ". Even though their leader, Emilio Aguinaldo, had already \nsurrendered to the Americans, he battled valiantly. He was then apprehended, but later rele", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Macario Sakay</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">truly the leader</span>}</div>"}, {"index": 8, "class": "opinion_statement", "text": "battled valiantly", "color": "#C8E6C9", "startPos": 2324, "endPos": 2341, "beforeText": "st. He was truly the \nKatipunan&#x27;s Dapitan chapter&#x27;s leader. Even though their leader, Emilio Aguinaldo, had already \nsurrendered to the Americans, he ", "extractionText": "battled valiantly", "afterText": ". He was then apprehended, but later released. \nMacario Sakay, on the other hand, was a fighter for liberty. He couldn&#x27;t stomach the prospect of \nthe ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Macario Sakay</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">battled valiantly</span>}</div>"}, {"index": 9, "class": "opinion_statement", "text": "a fighter for liberty", "color": "#C8E6C9", "startPos": 2427, "endPos": 2448, "beforeText": " had already \nsurrendered to the Americans, he battled valiantly. He was then apprehended, but later released. \nMacario Sakay, on the other hand, was ", "extractionText": "a fighter for liberty", "afterText": ". He couldn&#x27;t stomach the prospect of \nthe Philippines falling under foreign rule once more. He believed that if he did nothing, \neverything they had ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">Macario Sakay</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">fighter for liberty</span>}</div>"}, {"index": 10, "class": "opinion_statement", "text": "battled for", "color": "#C8E6C9", "startPos": 2598, "endPos": 2609, "beforeText": ". He couldn&#x27;t stomach the prospect of \nthe Philippines falling under foreign rule once more. He believed that if he did nothing, \neverything they had ", "extractionText": "battled for", "afterText": " would have been for naught. \n \nThe Tagalog Republic was acknowledged by the last revolutionary leaders battling for \nliberation in various parts of L", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">everything they had</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">battled for</span>}</div>"}, {"index": 11, "class": "opinion_statement", "text": "The Tagalog Republic was acknowledged", "color": "#C8E6C9", "startPos": 2641, "endPos": 2678, "beforeText": "Philippines falling under foreign rule once more. He believed that if he did nothing, \neverything they had battled for would have been for naught. \n \n", "extractionText": "The Tagalog Republic was acknowledged", "afterText": " by the last revolutionary leaders battling for \nliberation in various parts of Luzon. They all pooled their resources in order to mount a powerful \nc", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Tagalog Republic</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">acknowledged</span>}</div>"}, {"index": 12, "class": "opinion_statement", "text": "battling for liberation", "color": "#C8E6C9", "startPos": 2713, "endPos": 2737, "beforeText": " did nothing, \neverything they had battled for would have been for naught. \n \nThe Tagalog Republic was acknowledged by the last revolutionary leaders ", "extractionText": "battling for \nliberation", "afterText": " in various parts of Luzon. They all pooled their resources in order to mount a powerful \ncounter-offensive against by the Americans. They were succes", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">revolutionary leaders</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">battling for liberation</span>}</div>"}, {"index": 13, "class": "opinion_statement", "text": "They all pooled their resources", "color": "#C8E6C9", "startPos": 2765, "endPos": 2796, "beforeText": " have been for naught. \n \nThe Tagalog Republic was acknowledged by the last revolutionary leaders battling for \nliberation in various parts of Luzon. ", "extractionText": "They all pooled their resources", "afterText": " in order to mount a powerful \ncounter-offensive against by the Americans. They were successful for a time, but the Americans \nbecame aware of their o", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">They</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">pooled their resources</span>}</div>"}, {"index": 14, "class": "opinion_statement", "text": "mount a powerful counter-offensive", "color": "#C8E6C9", "startPos": 2809, "endPos": 2844, "beforeText": "ic was acknowledged by the last revolutionary leaders battling for \nliberation in various parts of Luzon. They all pooled their resources in order to ", "extractionText": "mount a powerful \ncounter-offensive", "afterText": " against by the Americans. They were successful for a time, but the Americans \nbecame aware of their operations. As part of their counter-offensive, t", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">They</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">powerful counter-offensive</span>}</div>"}, {"index": 15, "class": "opinion_statement", "text": "They were successful for a time", "color": "#C8E6C9", "startPos": 2871, "endPos": 2902, "beforeText": " for \nliberation in various parts of Luzon. They all pooled their resources in order to mount a powerful \ncounter-offensive against by the Americans. ", "extractionText": "They were successful for a time", "afterText": ", but the Americans \nbecame aware of their operations. As part of their counter-offensive, the Americans gathered all \nof the revolutionists&#x27; supporte", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">They</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Positive</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">successful for a time</span>}</div>"}, {"index": 16, "class": "opinion_statement", "text": "the Americans became aware of their operations", "color": "#C8E6C9", "startPos": 2908, "endPos": 2955, "beforeText": "Luzon. They all pooled their resources in order to mount a powerful \ncounter-offensive against by the Americans. They were successful for a time, but ", "extractionText": "the Americans \nbecame aware of their operations", "afterText": ". As part of their counter-offensive, the Americans gathered all \nof the revolutionists&#x27; supporters in one location. The Tagalog Republic&#x27;s demise is ", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">the Americans</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Neutral</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">became aware of their operations</span>}</div>"}, {"index": 17, "class": "opinion_statement", "text": "The Tagalog Republic's demise is genuinely repentant", "color": "#C8E6C9", "startPos": 3072, "endPos": 3125, "beforeText": "\nbecame aware of their operations. As part of their counter-offensive, the Americans gathered all \nof the revolutionists&#x27; supporters in one location. ", "extractionText": "The Tagalog Republic&#x27;s demise is genuinely \nrepentant", "afterText": ". It&#x27;s deception or treachery at its finest. The Revolutionaries were sold to the United \nstates government by Mr. Gomez, a Filipino citizen.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The Tagalog Republic&#x27;s demise</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">genuinely repentant</span>}</div>"}, {"index": 18, "class": "opinion_statement", "text": "It's deception or treachery at its finest", "color": "#C8E6C9", "startPos": 3127, "endPos": 3168, "beforeText": "nter-offensive, the Americans gathered all \nof the revolutionists&#x27; supporters in one location. The Tagalog Republic&#x27;s demise is genuinely \nrepentant. ", "extractionText": "It&#x27;s deception or treachery at its finest", "afterText": ". The Revolutionaries were sold to the United \nstates government by Mr. Gomez, a Filipino citizen.\n&quot;&quot;&quot;\n\n", "attributesHtml": "<div><strong>class:</strong> opinion_statement</div><div><strong>attributes:</strong> {<span class=\"lx-attr-key\">subject</span>: <span class=\"lx-attr-value\">The events</span>, <span class=\"lx-attr-key\">sentiment</span>: <span class=\"lx-attr-value\">Negative</span>, <span class=\"lx-attr-key\">key_phrase</span>: <span class=\"lx-attr-value\">deception or treachery at its finest</span>}</div>"}];
+        let currentIndex = 0;
+        let isPlaying = false;
+        let animationInterval = null;
+        let animationSpeed = 1.0;
+
+        function updateDisplay() {
+          const extraction = extractions[currentIndex];
+          if (!extraction) return;
+
+          document.getElementById('attributesContainer').innerHTML = extraction.attributesHtml;
+          document.getElementById('entityInfo').textContent = (currentIndex + 1) + '/' + extractions.length;
+          document.getElementById('posInfo').textContent = '[' + extraction.startPos + '-' + extraction.endPos + ']';
+          document.getElementById('progressSlider').value = currentIndex;
+
+          const playBtn = document.querySelector('.lx-control-btn');
+          if (playBtn) playBtn.textContent = isPlaying ? '⏸ Pause' : '▶️ Play';
+
+          const prevHighlight = document.querySelector('.lx-text-window .lx-current-highlight');
+          if (prevHighlight) prevHighlight.classList.remove('lx-current-highlight');
+          const currentSpan = document.querySelector('.lx-text-window span[data-idx="' + currentIndex + '"]');
+          if (currentSpan) {
+            currentSpan.classList.add('lx-current-highlight');
+            currentSpan.scrollIntoView({block: 'center', behavior: 'smooth'});
+          }
+        }
+
+        function nextExtraction() {
+          currentIndex = (currentIndex + 1) % extractions.length;
+          updateDisplay();
+        }
+
+        function prevExtraction() {
+          currentIndex = (currentIndex - 1 + extractions.length) % extractions.length;
+          updateDisplay();
+        }
+
+        function jumpToExtraction(index) {
+          currentIndex = parseInt(index);
+          updateDisplay();
+        }
+
+        function playPause() {
+          if (isPlaying) {
+            clearInterval(animationInterval);
+            isPlaying = false;
+          } else {
+            animationInterval = setInterval(nextExtraction, animationSpeed * 1000);
+            isPlaying = true;
+          }
+          updateDisplay();
+        }
+
+        window.playPause = playPause;
+        window.nextExtraction = nextExtraction;
+        window.prevExtraction = prevExtraction;
+        window.jumpToExtraction = jumpToExtraction;
+
+        updateDisplay();
+      })();
+    </script>
