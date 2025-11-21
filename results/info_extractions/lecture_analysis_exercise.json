@@ -1,0 +1,24 @@
+{
+    "title": "What is Data?",
+    "video_segment": "80:01",
+    "content_flow": [
+        {
+            "content_type": "slide_description",
+            "text": "The slide is titled \"What is Data?\" and it defines data as a collection of data objects and their attributes. It further elaborates that an attribute is a property or characteristic of an object, and that a collection of attributes describes an object. An object is also known as record, point, case, sample, entity, or tuple, and instance. The slide also states that most data comes from databases."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "When you mentioned about data, you need to know most of data comes from database. Currently, database still utilize relational database. When we talk relational database is because they will having table. We call them relation. In the table, we have attribute. Each column of them are attribute. Each row, each row we call them transaction or record, depends on how you try to do that. Transaction is more for a database transaction saying that how many record tuple you can relate to it. You have the tuple or you can talking about point. So every row right here is related to record.",
+            "timestamp": "80:02"
+        },
+        {
+            "content_type": "slide_description",
+            "text": "The slide then transitions to \"Types of Attributes\" and states that there are different types of attributes."
+        },
+        {
+            "content_type": "transcript_segment",
+            "text": "And then right here, we want to talking about type of attribute. We will not talk too much about them because later on, then you will assign you some exercise. But then first, we try to tell you that the attribute, we can somehow partition them to different type. By the way, the type right here is not data type. In computer science, if you learn data type, but it is not data type. We are talking about different. So we have four different type: nominal, ordinal, interval, and ratio. How we partition those attribute depends on the operation they are allowed to do. And then data type right here, I have something. Nominal is the one you can do last operation. Ratio is the one you can do all operation that including nominal, ordinal, interval. So it depends on how many operation you can working with. Here is another table. I think I removed the check mark. Do I? So this is a check mark. So then you can see that one is from minus to plus. Right? So for each one of them, so nominal data, you can only do comparison equal or not equal. We call them categorical operation that only working on categorical data. Ordinal data is called ordinal data because it related to order. So we call them ordinal. Ordinal data, you can do not only equal or not equal, you can also compare the order. Interval data, they will having some interval. This meaning is important. So then they can have equal space. That is called interval data. Ratio data, you can do equal and then you can also do proportional. So that is try to go for. You can see there is a very tiny word called true zero. Ratio data, you do have something called zero. That zero mean zero, nothing. Okay? You need to know true zero is mean just because they have a value called zero. That zero also mean nothing. Okay? Then it is not true zero. Okay? If your zero do not mean nothing, then it is not true zero.",
+            "timestamp": "81:16"
+        }
+    ]
+}
